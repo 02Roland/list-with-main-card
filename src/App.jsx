@@ -16,7 +16,7 @@ function App() {
   
   const [data, setData] = useState([])
   useEffect(()=>{
-    fetch('src/data.json')
+    fetch('/data.json')
       .then(reponse =>{
         if(!reponse.ok){
           throw new Error("Erreur lors de la recuperation de donnnees");
